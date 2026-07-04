@@ -5,7 +5,7 @@ include 'koneksi.php';
 // Cek apakah ada ID yang dikirim
 if(!isset($_GET['id']) || empty($_GET['id'])) {
     $_SESSION['error'] = "ID tidak ditemukan!";
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -15,7 +15,7 @@ $data = mysqli_fetch_array($ambil);
 
 if(!$data) {
     $_SESSION['error'] = "Data tidak ditemukan!";
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -81,7 +81,7 @@ if(!$data) {
 
                 <div class="form-actions">
                     <button type="submit" name="edit_data" class="btn-submit">Update Data</button>
-                    <a href="dasar.php" class="btn-cancel">Batal</a>
+                    <a href="index.php" class="btn-cancel">Batal</a>
                 </div>
             </form>
         </div>

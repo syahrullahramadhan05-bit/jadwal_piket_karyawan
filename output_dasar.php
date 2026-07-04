@@ -17,7 +17,7 @@ if (isset($_POST['tambah_data'])) {
     if (mysqli_query($koneksi, $query)) {
         echo "<script>
                 alert('Data Berhasil Ditambahkan');
-                window.location.href='dasar.php';
+                window.location.href='index.php';
               </script>";
     }
 }

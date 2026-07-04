@@ -11,7 +11,7 @@ if (isset($_POST['tambah_data'])) {
     // Validasi data tidak boleh kosong
     if(empty($nama) || empty($jabatan) || empty($hari) || empty($tugas)) {
         $_SESSION['error'] = "Semua field harus diisi!";
-        header("Location: dasar.php");
+        header("Location: index.php");
         exit();
     }
 
@@ -24,10 +24,10 @@ if (isset($_POST['tambah_data'])) {
         $_SESSION['error'] = "Gagal menambahkan data: " . mysqli_error($koneksi);
     }
     
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 } else {
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 }
 ?>

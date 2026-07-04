@@ -29,10 +29,10 @@ if (isset($_POST['edit_data'])) {
         $_SESSION['error'] = "Gagal mengupdate data: " . mysqli_error($koneksi);
     }
     
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 } else {
-    header("Location: dasar.php");
+    header("Location: index.php");
     exit();
 }
 ?>

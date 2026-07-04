@@ -1,5 +1,4 @@
-CREATE DATABASE jadwal_piket_kantor;
-USE jadwal_piket_kantor;
+
 
 CREATE TABLE table_piket (
     id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,

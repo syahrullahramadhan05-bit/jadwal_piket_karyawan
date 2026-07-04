@@ -16,6 +16,6 @@ if (isset($_GET['id'])) {
     $_SESSION['error'] = "ID tidak ditemukan!";
 }
 
-header("Location: dasar.php");
+header("Location: index.php");
 exit();
 ?>
